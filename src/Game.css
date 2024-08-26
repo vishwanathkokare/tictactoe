@@ -1,0 +1,66 @@
+/* Default to light mode */
+.game {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height:100vh;
+}
+
+.theme-toggle {
+  display:block;
+  border:1px solid #333;
+  outline:none;
+  margin-top:10px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.game-board {
+  margin: 20px;
+  display: flex;
+  flex-flow:column nowrap;
+  align-items: center;
+  justify-content:center;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.board-row::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .square {
+  background-color: #555;
+  border: 1px solid #666;
+}
+
+.dark-mode .status {
+  color: #ddd;
+}
